@@ -1,10 +1,11 @@
 /**
- * @typedef {Promise} VerbosePromise
+ * @typedef {Promise<T>} VerbosePromise<T>
  * @global
  * @category Async
  * @property {boolean} isFulfilled Promise has been resolved.
  * @property {boolean} isRejected Promise has been rejected.
  * @property {boolean} isPending Promise is not yet settled.
+ * @template T
  */
 /**
  * This function allow you to modify a JS Promise by adding some status properties.
@@ -16,6 +17,10 @@
  * @category Async
  * @arg {Promise<T>} promise
  * @returns {VerbosePromise<T>}
+ * @template T
  */
-export function makeVerbosePromise(promise: Promise<T>): any;
-export type VerbosePromise = Promise<any>;
+export function makeVerbosePromise<T>(promise: Promise<T>): VerbosePromise<T>;
+/**
+ * <T>
+ */
+export type VerbosePromise<T> = Promise<T>;

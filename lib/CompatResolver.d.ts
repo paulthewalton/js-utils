@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} CompatResolverCandidate
+ * @typedef CompatResolverCandidate
  * @property {string|function(): function} fn Either the member name of a candidate function within the `scope`, or a function that returns a candidate function.
  * @property {?Object} scope An optional scope object to check for the candidate function, defaults to the global object (`window` in browsers, `global` for node)
  * @category Compatibility

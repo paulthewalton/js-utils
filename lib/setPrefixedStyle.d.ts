@@ -1,3 +1,4 @@
+/** @typedef jQuery {} */
 /**
  * Apply a style to a DOM element with vendor prefixes.
  * @category Node & Element
@@ -6,4 +7,8 @@
  * @arg {string} styleValue - String-ified CSS style value.
  * @arg {boolean} prefixValues - Whether to prefix the values as well.
  */
-export function setPrefixedStyle(elem: Element | jQuery, styleName: string, styleValue: string, prefixValues: boolean): void;
+export function setPrefixedStyle(elem: Element | jQuery, styleName: string, styleValue: string, prefixValues?: boolean): void;
+/**
+ * {}
+ */
+export type jQuery = any;

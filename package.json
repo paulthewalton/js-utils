@@ -60,6 +60,7 @@
 		"dev": "gulp dev --color",
 		"lint": "gulp lint --color",
 		"test": "jest",
-		"docs": "gulp docs --color"
+		"docs": "gulp docs --color",
+		"tsdefs": "tsc -d lib/index.js --checkJs --emitDeclarationOnly"
 	}
 }
