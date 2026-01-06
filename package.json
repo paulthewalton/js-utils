@@ -5,7 +5,7 @@
 	"author": "Paul Walton <paul@denmandigital.com>",
 	"license": "MIT",
 	"repository": {
-		"url": "https://github.com/paulthewalton/js-utils",
+		"url": "git+https://github.com/paulthewalton/js-utils.git",
 		"type": "git"
 	},
 	"bugs": {
