@@ -7,13 +7,9 @@
  * @summary Debounce a function by setting a minimum elapsed time between invocations.
  * @category Functional Programming
  * @template T
- * @param {function(): T} fn Function to debounce.
+ * @param {(...args: any[]) => T} fn Function to debounce.
  * @param {number} wait Minimum elapsed time between invoking `fn`.
  * @param {boolean} [leading=false] Optional. Whether to invoke the function the first time is is called before waiting. Default false.
- * @returns Debounced function.
+ * @returns {(...args: any[]) => T} Debounced function.
  */
-export function debounce<T>(fn: () => T, wait: number, leading?: boolean): {
-    (...args: any[]): any;
-    cancel(): void;
-    flush(): T;
-};
+export function debounce<T>(fn: (...args: any[]) => T, wait: number, leading?: boolean): (...args: any[]) => T;
